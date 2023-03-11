@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class LoadingButton extends StatelessWidget {
   var busy = false;
@@ -9,7 +7,8 @@ class LoadingButton extends StatelessWidget {
   var text = "";
 
   LoadingButton(
-      {required this.busy,
+      {super.key,
+      required this.busy,
       required this.func,
       required this.invert,
       required this.text});
